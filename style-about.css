@@ -1,0 +1,114 @@
+/* style-about.css — стили страницы «О кофе» */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #2f3e34;
+    color: #f1efe6;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #1f2b23;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    color: #d9b382;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav a {
+    color: #f1efe6;
+    text-decoration: none;
+    margin-left: 18px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.nav a:hover {
+    border-color: #d9b382;
+}
+
+.nav a.active {
+    color: #d9b382;
+    border-color: #d9b382;
+}
+
+.main {
+    flex: 1;
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 36px 20px;
+}
+
+h1 {
+    color: #d9b382;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.block {
+    background: #3a4c3f;
+    border-left: 5px solid #d9b382;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+}
+
+.block-alt {
+    border-left-color: #a3c9a8;
+}
+
+.block h2 {
+    color: #d9b382;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.block-alt h2 {
+    color: #a3c9a8;
+}
+
+ol {
+    padding-left: 22px;
+}
+
+.btn {
+    color: #d9b382;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: #f1efe6;
+}
+
+.cta {
+    margin-top: 26px;
+    font-style: italic;
+}
+
+.footer {
+    background: #1f2b23;
+    color: #9fb4a4;
+    text-align: center;
+    padding: 14px;
+    font-size: 0.9rem;
+}

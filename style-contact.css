@@ -1,0 +1,154 @@
+/* style-contact.css — стили страницы «Контакты» */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(160deg, #1c2540, #3b2f63);
+    color: #eef0fa;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    backdrop-filter: blur(4px);
+}
+
+.logo {
+    color: #ffd166;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav a {
+    color: #eef0fa;
+    text-decoration: none;
+    margin-left: 18px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    transition: background 0.2s;
+}
+
+.nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.nav a.active {
+    background: #ffd166;
+    color: #1c2540;
+    font-weight: bold;
+}
+
+.main {
+    flex: 1;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 36px 20px;
+}
+
+h1 {
+    color: #ffd166;
+    margin-bottom: 14px;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 22px 26px;
+    margin: 22px 0;
+}
+
+.contact-card h2 {
+    color: #ffd166;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.contacts {
+    list-style: none;
+}
+
+.contacts li {
+    padding: 6px 0;
+}
+
+/* Форма */
+form label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #1c2540;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid #ffd166;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 11px 26px;
+    border: none;
+    border-radius: 24px;
+    background: #ffd166;
+    color: #1c2540;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #ffd166;
+    color: #ffd166;
+}
+
+.btn-outline:hover {
+    background: #ffd166;
+    color: #1c2540;
+}
+
+.cta {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.footer {
+    text-align: center;
+    padding: 14px;
+    font-size: 0.9rem;
+    color: #aab2d0;
+}

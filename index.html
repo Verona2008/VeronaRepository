@@ -1,19 +1,53 @@
-<!DOCTYPE html>  
-<html lang="ru">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Сайт</title>  
-</head>  
-<body>  
-    <header>
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейный уголок — Главная</title>
+    <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">☕ Кофейный уголок</div>
+        <nav class="nav">
+            <a href="index.html" class="active">Главная</a>
+            <a href="about.html">О кофе</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
     </header>
-    <main>
 
+    <main class="main">
+        <section class="hero">
+            <h1>Добро пожаловать в Кофейный уголок!</h1>
+            <p class="lead">Это маленький сайт о кофе: откуда он появился,
+               как его готовят и где нас найти.</p>
+            <p>Начните знакомство со страницы
+               <a class="btn" href="about.html">«О кофе»</a> —
+               или сразу пишите нам со страницы
+               <a class="btn btn-outline" href="contact.html">«Контакты»</a>.</p>
+        </section>
+
+        <section class="cards">
+            <article class="card">
+                <h2>🌱 Зёрна</h2>
+                <p>Арабика, робуста и всё, что между ними. Разбираемся,
+                   чем сорта отличаются и почему это важно.</p>
+            </article>
+            <article class="card">
+                <h2>⏲ Способы заваривания</h2>
+                <p>Турка, воронка, аэропресс и эспрессо-машина —
+                   у каждого способа свой характер.</p>
+            </article>
+            <article class="card">
+                <h2>📍 Кофейни</h2>
+                <p>Наш маленький список мест, где чашка действительно
+                   стоит своих денег.</p>
+            </article>
+        </section>
     </main>
-    <footer>
 
+    <footer class="footer">
+        <p>© 2026 Кофейный уголок. Напиток с этого сайта — бесплатный, но только в мыслях.</p>
     </footer>
-</body>  
-</html>  
+</body>
+</html>
